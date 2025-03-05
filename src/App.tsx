@@ -7,6 +7,7 @@ import { CaseStudies } from './pages/CaseStudies';
 import { CaseStudyDetails } from './pages/CaseStudyDetails';
 import { About } from './pages/About';
 import { Contact } from './pages/Contact';
+import { Legal } from './pages/Legal';
 import { content } from './content/index';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route path="/cases/:caseId" element={<CaseStudyDetails t={t.cases} />} />
           <Route path="/about" element={<About t={t.about} />} />
           <Route path="/contact" element={<Contact t={t.contact} />} />
+          <Route path="/legal/:type" element={<Legal t={t} />} />
         </Routes>
       </MainLayout>
     </Router>

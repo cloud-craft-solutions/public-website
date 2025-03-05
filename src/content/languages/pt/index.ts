@@ -10,6 +10,7 @@ import { techStack } from './techStack';
 import { features } from './features';
 import { benefits } from './benefits';
 import { stats } from './stats';
+import { legal } from './legal';
 
 export const pt = {
   nav,
@@ -24,4 +25,5 @@ export const pt = {
   features,
   benefits,
   stats,
+  legal,
 };

@@ -15,6 +15,7 @@ interface ServiceDetailsProps {
           description: string;
         };
       };
+      backButton: string;
     };
   };
 }
@@ -28,7 +29,7 @@ export function ServiceDetails({ t }: ServiceDetailsProps) {
       <div className="container mx-auto px-6 py-20">
         <Link to="/" className="inline-flex items-center text-blue-400 hover:text-blue-300 mb-8 group">
           <ArrowLeft className="h-5 w-5 mr-2 transform group-hover:-translate-x-1 transition-transform" />
-          Back
+          {t.services.backButton}
         </Link>
         <Typography variant="h2" className="text-white text-center">Service not found</Typography>
       </div>
@@ -39,7 +40,7 @@ export function ServiceDetails({ t }: ServiceDetailsProps) {
     <div className="container mx-auto px-6 py-20">
       <Link to="/" className="inline-flex items-center text-blue-400 hover:text-blue-300 mb-8 group">
         <ArrowLeft className="h-5 w-5 mr-2 transform group-hover:-translate-x-1 transition-transform" />
-        Back
+        {t.services.backButton}
       </Link>
       
       <div className="grid lg:grid-cols-2 gap-12">

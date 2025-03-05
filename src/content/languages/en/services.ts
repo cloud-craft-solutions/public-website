@@ -1,22 +1,22 @@
 export const services = {
   title: "Our Services",
-  subtitle: "Complete solutions to transform your digital infrastructure",
+  subtitle: "Transform your infrastructure with our comprehensive solutions",
   services: {
     consulting: {
       title: "Cloud-Native Consulting",
-      description: "Expertise in High Availability and mission-critical environments, with highly skilled professionals to build your future platform."
+      description: "Our team of Cloud-Native experts provides high-level consulting for High Availability and mission-critical environments. With deep knowledge in modern architectures and innovative practices, we help build and optimize your platform for the future, ensuring scalability, security, and operational efficiency."
     },
     platform: {
       title: "Platform Engineering",
-      description: "We develop robust and scalable architectures that enable your team to deploy applications with confidence and efficiency."
+      description: "We develop robust architectures and internal platforms that empower your teams. Our Developer Experience (DX) focused approach enables your developers to deploy applications with confidence, agility, and autonomy, while maintaining the highest standards of security and governance."
     },
     sre: {
       title: "Site Reliability Engineering",
-      description: "Specialized team in proactive analysis, problem solving, and continuous infrastructure optimization."
+      description: "Our SRE team combines software engineering with IT operations to create highly reliable and scalable systems. We focus on automation, proactive monitoring, and rapid problem resolution, ensuring continuous availability and performance of your critical applications."
     },
     devops: {
       title: "DevOps Engineering",
-      description: "Implementation and maintenance of automated pipelines for continuous delivery and efficient integration."
+      description: "We transform your development cycle with modern and efficient DevOps practices. We implement and manage automated CI/CD pipelines, ensuring fast and reliable deliveries, with continuous integration and automated deployment, elevating your team's productivity."
     }
   },
   backButton: "Back"

@@ -2,6 +2,7 @@ import React from 'react';
 import { Navigation } from '../organisms/Navigation';
 import { Footer } from '../organisms/Footer';
 import { BackToTop } from '../atoms/BackToTop';
+import { CookieConsent } from '../atoms/CookieConsent';
 
 interface MainLayoutProps {
   children: React.ReactNode;
@@ -20,6 +21,7 @@ export function MainLayout({ children, lang, onLanguageChange, t }: MainLayoutPr
         <Footer t={t.footer} lang={lang} />
       </div>
       <BackToTop />
+      <CookieConsent lang={lang} />
     </div>
   );
 }

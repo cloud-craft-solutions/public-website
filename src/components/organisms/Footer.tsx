@@ -1,6 +1,7 @@
 import React from 'react';
 import { Twitter, Facebook, Youtube } from 'lucide-react';
 import { Logo } from '../atoms/Logo';
+import { Link } from 'react-router-dom';
 
 interface FooterProps {
   t: {
@@ -38,18 +39,17 @@ export function Footer({ t, lang }: FooterProps) {
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">{t.company.title}</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white transition">{t.company.about}</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition">{t.company.services}</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition">{t.company.products}</a></li>
+              <li><Link to="/about" className="text-gray-400 hover:text-white transition">{t.company.about}</Link></li>
+              <li><Link to="/services/consulting" className="text-gray-400 hover:text-white transition">{t.company.services}</Link></li>
+              <li><Link to="/cases" className="text-gray-400 hover:text-white transition">{t.company.products}</Link></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition">{t.company.blog}</a></li>
             </ul>
           </div>
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">{t.legal.title}</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white transition">{t.legal.terms}</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition">{t.legal.privacy}</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition">{t.legal.legal}</a></li>
+              <li><Link to="/legal/terms" className="text-gray-400 hover:text-white transition">{t.legal.terms}</Link></li>
+              <li><Link to="/legal/privacy" className="text-gray-400 hover:text-white transition">{t.legal.privacy}</Link></li>
             </ul>
           </div>
           <div>

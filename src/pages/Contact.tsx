@@ -23,6 +23,7 @@ interface ContactProps {
       messagePlaceholder: string;
       submit: string;
     };
+    backButton: string;
   };
 }
 
@@ -33,7 +34,7 @@ export function Contact({ t }: ContactProps) {
       <div className="container mx-auto px-6 mb-8">
         <Link to="/" className="inline-flex items-center text-blue-400 hover:text-blue-300 group">
           <ArrowLeft className="h-5 w-5 mr-2 transform group-hover:-translate-x-1 transition-transform" />
-          Back
+          {t.backButton}
         </Link>
       </div>
 
