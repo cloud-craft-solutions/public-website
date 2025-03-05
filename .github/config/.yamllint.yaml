@@ -1,0 +1,13 @@
+---
+extends: default
+ignore: |
+  *catalog-info*
+  *git*
+rules:
+  line-length:
+    max: 400
+    level: warning
+  indentation:
+    spaces: 2
+    indent-sequences: true
+  truthy: disable
